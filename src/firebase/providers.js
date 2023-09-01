@@ -8,7 +8,7 @@ export const signInWithGoogle = async()=>{
         const result = await signInWithPopup(FirebaseAuth, googleProvider);
         // const credentials = GoogleAuthProvider.credentialFromResult(result)
         const user = result.user;
-        console.log({user})
+      
         const {displayName, email,photoURL, uid} = result.user
         return {
             ok:true,
@@ -31,7 +31,7 @@ export const registerUserWithEmailPassword = async({email,password,displayName})
         const resp = await createUserWithEmailAndPassword(FirebaseAuth,email,password);
       
         const {uid,photoURL} = resp.user
-        console.log(resp)
+  
         await updateProfile(FirebaseAuth.currentUser, {
             displayName
         });
