@@ -8,4 +8,3 @@ export const store = configureStore({
     journal: journalSlice.reducer
   },
 })
-//digo que voy a crear un reducer
