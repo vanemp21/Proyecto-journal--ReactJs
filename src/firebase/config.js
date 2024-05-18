@@ -2,9 +2,12 @@
 import { getAuth } from 'firebase/auth';
 import { initializeApp } from "firebase/app";
 import { getFirestore } from 'firebase/firestore/lite'
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
-console.log(import.meta.env); //para ver las variables de entorno
+// console.log(import.meta.env); //para ver las variables de entorno
+
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyCsDHc0S10EMV5tdqr91qwDF9Hf93Gq09Q",
